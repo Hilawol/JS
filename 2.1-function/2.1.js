@@ -4,7 +4,7 @@
   }
 
   let france = describeCountry("France", "67 million", "Paris");
-  let london = describeCountry("England", "55.98", "London");
+  let london = describeCountry("England", "55.99", "London");
   let germany = describeCountry("Germany", "83 million", "Berlin");
 
   console.log(france);
