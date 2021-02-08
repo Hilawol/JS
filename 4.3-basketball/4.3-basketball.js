@@ -2,6 +2,7 @@ function calcAverage(score1, score2, score3) {
   return (score1 + score2 + score3) / 3;
 }
 
+//
 function getWinner(p1Name, p1Score, p2Name, p2Score, p3Name = "", p3Score = 0) {
   if ((p1Score > p2Score) && (p1Score > p3Score)) {
     return `${p1Name} is the winner. With score: ${p1Score}`;
@@ -15,7 +16,7 @@ function getWinner(p1Name, p1Score, p2Name, p2Score, p3Name = "", p3Score = 0) {
   else if ((p1Score == p2Score) && (p1Score == p3Score)) {
     return `It is a tie with score: ${p1Score}`;
   }
-  else if (p1Score == p2Score) {
+  else if (p1Score == p2Score) { //deals with a tie when a third player was not used. 
     return `${p1Name} and ${p2Name}  won with score: ${p1Score}`;
   }
   else if (p1Score == p3Score) {

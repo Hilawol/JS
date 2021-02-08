@@ -18,10 +18,20 @@ const validatePasswordTernary = password => {
 console.log(validatePasswordTernary("12345678"));
 console.log(validatePasswordTernary("1234567"));
 
+//A solution with regEx
+// const hasCapital = str => {
+//   const regex = new RegExp("[A-Z]+");
+//   return regex.test(str);
+// }
+
 
 const hasCapital = str => {
-  const regex = new RegExp("[A-Z]+");
-  return regex.test(str);
+  for (let i = 0; i <= str.length; i++) {
+    if (65 <= str[i] <= 90) {
+      return true;
+    }
+  }
+  return false;
 }
 
 //5.4 Create an “advanced” password
