@@ -13,11 +13,11 @@ const mycountry = {
 //  With the help of the ‘this’ keyword, this method will log a string like this to the console:
 // ‘Finland has 6 million people, their mother tongue is Finnish, they have 3 neighbouring countries and a capital called Helsinki’.
 mycountry.describe = function () {
-  return `${this.country} has ${this.population} people, their mother tongue is ${this.language}, they have ${this.neighbours.length} neighbouring countries and a capital called ${this.capital}.`
+  console.log(`${this.country} has ${this.population} people, their mother tongue is ${this.language}, they have ${this.neighbours.length} neighbouring countries and a capital called ${this.capital}.`);
 };
 
 // 3. Call the ‘descrbie method’.
-console.log(mycountry.describe());
+mycountry.describe();
 
 // 4. Add a method called 'checkIsland' to the 'myCountry' object.
 //  This method will set a new property on the object, called 'isIsland'.
