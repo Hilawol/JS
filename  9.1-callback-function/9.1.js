@@ -41,3 +41,8 @@ const starSeperator = (str) => {
 };
 
 console.log(firstWordUpperCase(str, starSeperator));
+
+
+
+
+
