@@ -12,7 +12,7 @@ let sumOfEven = arr.reduce(sumOfEvenReducer, 0);
 console.log(sumOfEven);
 
 // 3. average
-const sumReducer = (avg, currentValue) => avg + currentValue;
+const sumReducer = (sum, currentValue) => sum + currentValue;
 let avg = arr.reduce(sumReducer) / arr.length;
 console.log(avg);
 
