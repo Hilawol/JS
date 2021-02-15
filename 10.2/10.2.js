@@ -9,6 +9,8 @@ const doubleValues = (arr) => arr.map(value => value * 2);
 let newArray = doubleValues(arr);
 console.log(newArray);
 
+
+
 // 2. Write a function called onlyEvenValues which accepts an
 // array and returns a new array with only the even values in
 // the array passed to the function.
@@ -19,6 +21,8 @@ const onlyEvenValues = (arr) => arr.filter(value => value % 2 == 0);
 
 newArray = onlyEvenValues(arr);
 console.log(newArray);
+
+
 
 
 // 3. Write a function called showFirstAndLast which accepts
@@ -42,6 +46,8 @@ const showFirstAndLast = (arr) => {
 console.log(showFirstAndLast(arr));
 
 
+
+
 // 4. Write a function called vowelCount which accepts a
 // string as an argument. The function should return an object‎
 // which has the count of the number of vowel’s that are in
@@ -49,6 +55,23 @@ console.log(showFirstAndLast(arr));
 // should be the count. e.g. {a:3, o:2,u:4}.
 // Should not be case sensitive.
 
+const isVowel = ch => ch == 'a' ||
+  ch.toLowerCase() == 'e' ||
+  ch.toLowerCase() == 'i' ||
+  ch.toLowerCase() == 'o' ||
+  ch.toLowerCase() == 'u';
+
+const vowelCount = str => {
+  let splitStr = str.toLowerCase().split("");
+  const vowelReduce = (counter, currentCh) => {
+    if (isVowel(currentCh)) {
+      counter[currentCh] ? counter[currentCh] += 1 : counter[currentCh] = 1;
+    }
+    return counter;
+  }
+  return splitStr.reduce(vowelReduce, {});
+}
+console.log(vowelCount("kErshenovich"));
 
 
 
@@ -62,6 +85,20 @@ const capitalize = (str) => {
   return temp.join("");
 };
 console.log(capitalize("hila"));
+
+
+// 6. Write a function called shiftLetters that takes a string as an argument 
+// and return’s an encoded string with each letter shifted down the alphabet by one.
+
+const shiftLetters = str => {
+  return str.split("").map(ch => {
+    return ch == 'a' ? 'z' :
+      ch == 'A' ? 'Z' :
+        String.fromCharCode(ch.charCodeAt(0) - 1);
+  }).join("");
+}
+console.log(shiftLetters("abcdeABCDEZ"));
+
 
 // 7. Create a function called swapCase that takes a string as
 // an argument and returns a string that every other word is
