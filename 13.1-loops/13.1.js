@@ -20,8 +20,8 @@ const listOfNeighbours = [
 //   }
 // }
 
-for (arr of listOfNeighbours) {
-  for (country of arr) {
+for (const arr of listOfNeighbours) {
+  for (const country of arr) {
     console.log(`Neughbour: ${country}`);
   }
 }
