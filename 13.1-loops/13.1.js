@@ -14,8 +14,14 @@ const listOfNeighbours = [
   ["Norway", "Sweden", "Russia"],
 ];
 
-for (let i = 0; i < listOfNeighbours.length; i++) {
-  for (let j = 0; j < listOfNeighbours[i].length; j++) {
-    console.log(`Neughbour: ${listOfNeighbours[i][j]}`);
+// for (let i = 0; i < listOfNeighbours.length; i++) {
+//   for (let j = 0; j < listOfNeighbours[i].length; j++) {
+//     console.log(`Neughbour: ${listOfNeighbours[i][j]}`);
+//   }
+// }
+
+for (arr of listOfNeighbours) {
+  for (country of arr) {
+    console.log(`Neughbour: ${country}`);
   }
 }
