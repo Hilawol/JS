@@ -3,7 +3,7 @@
 // 1. First find the line that contains the problem. Write it
 // down.
 
-// ----------->Line 11. 
+// ----------->Line 19,23. 
 
 // 2. Which debug method did you use to find the bug?
 // ----------->Vscode debugger

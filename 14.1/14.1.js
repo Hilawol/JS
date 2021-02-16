@@ -1,12 +1,12 @@
 // What is wrong with this code?
 // 1. First find the line that contains the problem. Write it down.
-// ----> Problems are in lines 13,21,24
+// ----> Problems are in lines 17,24,26
 
 // 2. Which debug method did you use to find the bug?
 // ----> Setting breakpoints in the vsCode
 
 // 3. Explain the bug in your own words.
-// ----> 1.In line 24 there was a comma ',' missing
+// ----> 1.In line 26 there was a comma ',' missing
 //       2.sum was declared as const, and later was asigned a value.
 //       3.The function returns undefined. A return value was missing in the function. 
 

@@ -1,13 +1,13 @@
 // What is wrong with this code?
 // 1. First find the line that contains the problem. Write it down.
-// ---------> Line 9.
+// ---------> Line 24.
 
 
 // 2. Which debug method did you use to find the bug?
 // ---------> Reading the error log.
 
 // 3. Explain the bug in your own words.
-// ---------> There is a miss psell in the function name on line 19. 
+// ---------> There is a miss psell in the function name on line 24. 
 // ---------> The number returned is not the smallest. The logic was wrong. 
 
 // 4. Fix the code and submit it all.

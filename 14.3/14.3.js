@@ -1,7 +1,7 @@
 
 // What is wrong with this code?
 // 1. First find the line that contains the problem. Write it down.
-// Line 14.
+// Line 17.
 // 2. Which debug method did you use to find the bug?
 // Vscode debugger
 // 3. Explain the bug in your own words.
