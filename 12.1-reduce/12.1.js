@@ -6,13 +6,13 @@ const maxReducer = (max, currentValue) => currentValue > max ? currentValue : ma
 let max = arr.reduce(maxReducer, 0);
 console.log(max);
 
-// 2. sum of even numbers
+// // 2. sum of even numbers
 const sumOfEvenReducer = (sum, currentValue) => currentValue % 2 == 0 ? sum += currentValue : sum;
 let sumOfEven = arr.reduce(sumOfEvenReducer, 0);
 console.log(sumOfEven);
 
 // 3. average
 const sumReducer = (sum, currentValue) => sum + currentValue;
-let avg = arr.reduce(sumReducer) / arr.length;
+let avg = arr.reduce(sumReducer, 10) / arr.length;
 console.log(avg);
 
