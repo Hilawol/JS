@@ -1,0 +1,24 @@
+*{
+  box-sizing: border-box;
+}
+
+label, .text{
+  margin:15px 0;
+}
+
+.smiley{
+  background-image:  url("https://lh3.googleusercontent.com/proxy/7ZqSOjWfNsxO9fX2PLHjXAZzzaTO3e0dV4jySldlmTHpJbsszVhY49oJoZ0Re4g87bIo6ZY16MJ7gLbgtdnN53tESvM9OnQ");
+  background-position: center;
+  background-size: contain;
+  height: 50px;
+  width:50px;
+}
+
+.msg{
+  color:tomato;
+  display: none;
+}
+
+.smilyDiv{
+  display: flex;
+}
