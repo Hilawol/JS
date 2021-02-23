@@ -1,0 +1,32 @@
+
+.mainDiv{
+  text-align: center;
+}
+.mainDiv p{
+  font-size: 30px;
+}
+
+.verifyDiv{
+  height: 200px;
+  width: 500px;
+  margin: auto;
+  border:1px solid black;
+}
+
+.inpuDiv{
+  display: flex;
+}
+.box{
+  height: 50px;
+  width: 50px;
+  margin:10px auto;
+  text-align: center;
+}
+
+.btn{
+  height: 25px;
+  width: 75px;
+  display: block;
+  margin: 50px auto;
+}
+
