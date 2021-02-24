@@ -1,0 +1,45 @@
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.letter{
+  border: 1px solid black;
+  width:50px;
+  height:50px;
+  text-align: center;
+  font-size: 30px;
+  padding-top: 10px;
+}
+
+.again{
+  width:80px;
+  height: 50px;
+}
+
+.hidden{
+  display: none;
+}
+.guess{
+  height: 50px;
+  width:50px;
+  font-size: 30px;
+  padding-top: 10px;
+  text-align: center;
+}
+.guessed{
+  font-size: 18px;
+}
+
+.red{
+  color: red;
+}
+ .green{
+   color:green;
+ }
+
+ .msg{
+   line-height: 30px;
+   font-size: 30px;
+ }
