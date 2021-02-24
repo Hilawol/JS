@@ -14,11 +14,9 @@ function seconds() {
     second = 0;
     minutes();
   }
-  else {
-    second++;
-  }
+  else second++;
+
   secondSpan.textContent = second;
-  console.log(second);
 }
 
 function minutes() {
@@ -26,22 +24,14 @@ function minutes() {
     minute = 0
     hours();
   }
-  else {
-    minute++;
-  }
+  else minute++;
+
   minuteSpan.textContent = minute;
-  console.log("minute:", minute);
 }
 
 function hours() {
-  if (hour == 23) {
-    hour = 0;
-  }
-  else {
-    hour++;
-  }
+  (hour == 23) ? hour = 0 : hour++;
   hoursSpan.textContent = hour;
-  console.log("hour:", hour);
 }
 
 
