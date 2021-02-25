@@ -1,0 +1,18 @@
+.clock{
+  text-align: center;
+  /* margin: 50px; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+span{
+  line-height: 70px;
+  font-size: 50px;
+  display: inline-block;
+  width:40px;
+}
+
+.btnDiv{
+
+}

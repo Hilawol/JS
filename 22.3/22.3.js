@@ -16,7 +16,7 @@ randomLetter();
 
 function play(e) {
   console.log("in play")
-  guess = String.fromCharCode(e.keyCode);
+  guess = e.key;
   console.log(guess);
   if ((/[a-zA-Z]/).test(guess)) {
     let g = guess.toLowerCase();
