@@ -7,3 +7,6 @@
 // that includes at least one item that is not a word. Print the resolve and reject
 // in a .then, .catch.
 
+const makeAllCaps = (words) => {
+
+}
